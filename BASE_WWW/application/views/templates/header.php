@@ -13,10 +13,10 @@
 	<body>
 
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		  <a class="navbar-brand" href="#">
 		  	<!--MaPhoto.Link -->
-		  	<img src="assets/img/MaPhotoLink.png" alt="">
+		  	<img src="assets/img/MaPhotoLink.png" width="250" height="70" alt="">
 		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -28,29 +28,34 @@
 		        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">About</a>
+		        <a class="nav-link" href="#">Votre profil</a>
 		      </li>
-		      <li class="nav-item dropdown">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Vos photos</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Vos albums</a>
+		      </li>     			            		      
+<!-- 		      <li class="nav-item dropdown">
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Dropdown
+		          Gestions des membres
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Action</a>
-		          <a class="dropdown-item" href="#">Another action</a>
+		          <a class="dropdown-item" href="#">Gèrer vos photos</a>
+		          <a class="dropdown-item" href="#">Gèrer vos albums</a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item" href="#">Something else here</a>
 		        </div>
-		      </li>
+		      </li> 
 		      <li class="nav-item">
 		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-		      </li>
+		      </li> -->
 		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		    </form>
+		    <ul class="nav-item">
+			  <a href=""><button class="btn btn-outline-success" type="button">Connexion</button></a>
+			  <a href=""><button class="btn btn-outline-secondary" type="button">S'inscrire</button></a>
+		    </ul>
 		  </div>
 		</nav>
-
-		<div class="container">	
+		<div class="container"> <!-- container de l'ensemble du body de toutes les pages -->
 

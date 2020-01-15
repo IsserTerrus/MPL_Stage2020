@@ -1,5 +1,7 @@
 <?php
-class Pages extends CI_Controller {
+
+
+class Admin extends CI_Controller {
 
 
 
@@ -8,9 +10,9 @@ class Pages extends CI_Controller {
 			$this->load->helper('url');
 		}
 
-		public function view($page = 'public_index')
+		public function view($page = 'admin_compte')
 		{
-			if(! file_exists(APPPATH.'views/public/'.$page.'.php'))
+			if(! file_exists(APPPATH.'views/member/'.$page.'.php'))
 			{
 				show_404();
 			}
@@ -18,7 +20,11 @@ class Pages extends CI_Controller {
 			$data['title'] = ucfirst($page);
 
 			$this->load->view('templates/header', $data);
-        	$this->load->view('public/'.$page, $data);
+        	$this->load->view('member/'.$page, $data);
         	$this->load->view('templates/footer', $data);
  		}
 }
+
+
+
+?>
