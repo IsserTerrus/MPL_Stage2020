@@ -50,8 +50,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'publique/view';
-$route['(:any)'] = 'publique/view/$1';
+
+$route['public'] = 'publique/view'; //http://localhost/base_www/index.php/public
+$route['public/(:any)'] = 'publique/view/$1';//http://localhost/base_www/index.php/public/public_photo
+
+$route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
+$route['member/(:any)'] = 'membre/view/$1';
+
+$route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
+$route['admin/(:any)'] = 'admin/view/$1';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['member/(:any)'] = 'member/view/$1';
-$route['member'] = 'member';

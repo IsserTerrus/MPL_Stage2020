@@ -1,5 +1,7 @@
 <?php
 
-//Page publique pour les photos
+
 
 ?>
+
+<p> Publique Photos</p>

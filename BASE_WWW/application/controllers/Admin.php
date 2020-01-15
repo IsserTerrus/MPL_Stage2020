@@ -12,7 +12,7 @@ class Admin extends CI_Controller {
 
 		public function view($page = 'admin_compte')
 		{
-			if(! file_exists(APPPATH.'views/member/'.$page.'.php'))
+			if(! file_exists(APPPATH.'views/admin/'.$page.'.php'))
 			{
 				show_404();
 			}
@@ -20,7 +20,7 @@ class Admin extends CI_Controller {
 			$data['title'] = ucfirst($page);
 
 			$this->load->view('templates/header', $data);
-        	$this->load->view('member/'.$page, $data);
+        	$this->load->view('admin/'.$page, $data);
         	$this->load->view('templates/footer', $data);
  		}
 }
