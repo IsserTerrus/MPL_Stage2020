@@ -12,18 +12,18 @@
 	</head>
 	<body>
 
-
+<!-- réaliser une condition pour afficher le menu pour les membres ou un autre menu pour les utilisateurs publics -->		
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		  <a class="navbar-brand" href="#">
+		  <a class="navbar-brand" href="<?php echo base_url("application/views/public/public_index.php") ?>">
 		  	<!--MaPhoto.Link -->
-		  	<img src="assets/img/MaPhotoLink.png" width="250" height="70" alt="">
+		  	<img src="<?php echo base_url("assets/img/MaPhotoLink.png") ?>" width="250" height="70" alt="">
 		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
+		    <ul class="navbar-nav mr-auto text-center">
 		      <li class="nav-item active">
 		        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
 		      </li>
@@ -37,8 +37,8 @@
 		        <a class="nav-link" href="#">Vos albums</a>
 		      </li>     			            		      
 		    </ul>
-		    <ul class="nav-item">
-			  <a href=""><button class="btn btn-outline-success" type="button">Connexion</button></a>
+		    <ul class="nav-item text-center">
+			  <a href="<?php echo base_url("application/views/member/member_identification"); ?>"><button class="btn btn-outline-success" type="button">Connexion</button></a>
 			  <a href=""><button class="btn btn-outline-secondary" type="button">S'inscrire</button></a>
 		    </ul>
 		  </div>

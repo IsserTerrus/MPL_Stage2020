@@ -6,7 +6,7 @@
 				  <p class="lead">Application libre réalisée pour les besoins de nos photographes</p>
 				  <hr class="my-4">
 				  <p>Pour voir en détail les fonctionnalités de l'application, rendez-vous sur la page de la documentation en cliquant sur le bouton !</p>
-				  <a class="btn btn-primary btn-lg" href="#" role="button">En savoir plus</a>
+				  <a class="btn btn-dark btn-lg" href="#" role="button">En savoir plus</a>
 				</div>  
 			</section>
 
@@ -62,12 +62,10 @@
 
 				<div class="row text-center">
 					<div class="col-12">
-						<h1 class="display-4 text-center">Venez tester notre application !</h1>
-						<button type="button" class="btn btn-primary btn-lg">Connexion</button>
-						<button type="button" class="btn btn-secondary btn-lg">S'inscrire</button>
+						<p class="lead text-muted">Vous êtes nouveau ? Adhèrez à l'espace membre pour pouvoir bénéficier de notre application.</p><br>
+						<button type="button" class="btn btn-dark btn-lg">Connexion</button>
+						<button type="button" class="btn btn-dark btn-lg">S'inscrire</button>
 					</div>
-
-
-
 				</div>
 			</div>
+			<br>

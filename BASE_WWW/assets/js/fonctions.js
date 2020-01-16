@@ -1,6 +1,4 @@
 
-function retourneAnnee(laDate){
 
-	ladate=new Date();
-	document.write(ladate.getFullYear());
-}
+var ladate=new Date();
+document.write(ladate.getFullYear());
