@@ -1,4 +1,4 @@
-			
+		<div class="container">	
 			<footer class="pt-4 my-md-5 pt-md-5 border-top">
 			    <div class="row">
 			    	
@@ -37,10 +37,7 @@
 			      <div class="col-12 col-md">
 			        <img class="mb-2" src="assets/img/GRAY-white.png" alt="" width="24" height="24">
 			        <small class="d-block mb-3 text-muted">&copy; 
-			        	<script type="text/javascript">
-							var ladate=new Date();
-							document.write(ladate.getFullYear());
-			        	</script>
+			        	<script src="assets/js/fonctions.js"></script>
 			        </small>
 			      </div>
 

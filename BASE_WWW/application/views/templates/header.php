@@ -36,20 +36,6 @@
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Vos albums</a>
 		      </li>     			            		      
-<!-- 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Gestions des membres
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="#">Gèrer vos photos</a>
-		          <a class="dropdown-item" href="#">Gèrer vos albums</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Something else here</a>
-		        </div>
-		      </li> 
-		      <li class="nav-item">
-		        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-		      </li> -->
 		    </ul>
 		    <ul class="nav-item">
 			  <a href=""><button class="btn btn-outline-success" type="button">Connexion</button></a>
@@ -57,5 +43,5 @@
 		    </ul>
 		  </div>
 		</nav>
-		<div class="container"> <!-- container de l'ensemble du body de toutes les pages -->
+		 
 

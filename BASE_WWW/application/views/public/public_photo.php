@@ -1,7 +1,6 @@
-<?php
+<?php /*Meta donnée à insérer */?>
 
-
-
-?>
-
-<p> Publique Photos</p>
+		<div class="container">
+			<p> Publique Photos</p>
+		</div>
+		
