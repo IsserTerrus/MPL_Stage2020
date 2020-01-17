@@ -1,10 +1,10 @@
 
-			<footer class="pt-4 my-md-5 pt-md-5 border-top">
+			<footer class="pt-4  pt-md-5 border-top bg-light"> <!-- my-md-5 -->
 				<div class="container">	
 				    <div class="row">
 				    	
 				      <div class="col-6 col-md">
-				        <h5>FOKUSA</h5>
+				        <h5>Fokusa</h5>
 				        <ul class="list-unstyled text-small">
 				          <li><a class="text-muted" href="<?php echo base_url("https://www.fokuza.fr/") ?>">Site internet</a></li>
 				        </ul>
@@ -27,7 +27,9 @@
 
 				      <div class="col-12 col-md">
 				        <img class="mb-2" src="" alt="" width="24" height="24">
-				        <small class="d-block mb-3 text-muted">&copy; 
+				        <small class="d-block mb-3 text-muted">
+				        	Site développé avec Code Igniter <br>
+				        	&copy; 
 				        	<script src="<?php echo base_url("assets/js/fonctions.js") ?>"></script>
 				        </small>
 				      </div>

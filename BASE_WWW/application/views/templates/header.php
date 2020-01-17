@@ -12,7 +12,20 @@
 	</head>
 	<body>
 
-<!-- réaliser une condition pour afficher le menu pour les membres ou un autre menu pour les utilisateurs publics -->		
+		<!-- réaliser une condition pour afficher le menu pour les membres ou un autre menu pour les utilisateurs publics -->
+
+		<!-- NavBar pour tout les utilisateurs -->
+		<nav class="navbar navbar-dark bg-dark">
+		  <a class="navbar-brand" href="#">
+		  	<img src="<?php echo base_url("assets/img/MaPhotoLink.png") ?>" width="250" height="70" alt="">
+		  </a>
+		    <ul class="nav-item text-center">
+			  <a href="<?php echo base_url("application/views/member/member_identification"); ?>"><button class="btn btn-outline-success" type="button">Connexion</button></a>
+			  <a href=""><button class="btn btn-outline-secondary" type="button">S'inscrire</button></a>
+		    </ul>		  
+		</nav>	
+
+		<!-- NavBar pour les membres connectés -->	
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		  <a class="navbar-brand" href="<?php echo base_url("application/views/public/public_index.php") ?>">
 		  	<!--MaPhoto.Link -->
@@ -38,8 +51,7 @@
 		      </li>     			            		      
 		    </ul>
 		    <ul class="nav-item text-center">
-			  <a href="<?php echo base_url("application/views/member/member_identification"); ?>"><button class="btn btn-outline-success" type="button">Connexion</button></a>
-			  <a href=""><button class="btn btn-outline-secondary" type="button">S'inscrire</button></a>
+			  <a href="<?php echo base_url("application/views/member/member_identification"); ?>"><button class="btn btn-outline-success" type="button">Déconnexion</button></a>
 		    </ul>
 		  </div>
 		</nav>

@@ -9,7 +9,6 @@
 				  <a class="btn btn-dark btn-lg" href="<?php echo base_url("application/views/member/member_identification.php") ?>" role="button">Connexion</a>
 				</div>  
 			</section>
-
 			<div class="container">
 				<div class="card-deck mb-3 text-center">
 					<div class="card mb-4 shadow-sm">
@@ -22,7 +21,9 @@
 					        <li>Cotisation d'adhésion si le photographe n'est pas ''Adhérent Photographe'' à l'Association FOKUZA</li><br>
 					        <li></li>
 					      </ul>
-					      <button type="button" class="btn btn-lg btn-block btn-dark">Adhérer</button>
+					    </div>
+					    <div class="card-footer">
+					    	<button type="button" class="btn btn-lg btn-block btn-dark">Adhérer</button>
 					    </div>
 					</div>	
 					<div class="card mb-4 shadow-sm">
@@ -36,8 +37,18 @@
 					        <li>+2€ par Go en plus par an</li>
 					        <li>En cas de non-renouvellement les précédents partages seront effacés</li>
 					      </ul>
-					      <button type="button" class="btn btn-lg btn-block btn-dark">S'abonner</button>
 					    </div>
+					    <div class="card-footer">
+					    	<button type="button" class="btn btn-lg btn-block btn-dark">S'abonner</button>
+					    </div>					    
 					</div>	
-				</div>					
-			</div>
+				</div>
+				<div class="jumbotron text-center bg-light">
+				  <h1>Contact</h1><br>
+				  <ul class="list-group">
+					<li class="list-group-item"><h3>Email: contact@fokusa.fr</h3></li><br>
+					<li class="list-group-item"><h3>Tél: 06.36.78.30.61</h3></li>
+				  </ul>
+				</div>	
+			</div>		
+			<br>	
