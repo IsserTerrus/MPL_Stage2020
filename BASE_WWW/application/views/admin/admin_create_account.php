@@ -23,9 +23,15 @@
 					<label>Description</label>
 					<input type="text" name="desc" placeholder="Une description">
 					<label>Pseudo</label>
-					<input type="text" name="namePseudo" placeholder="Pseudo">
+					<input type="text" name="Pseudo" placeholder="Pseudo">
 					<label>Mot de passe</label>
 					<input type="password" name="nom" placeholder="Mot de passe">
+					<label>Administrateur</label>
+					<input type="boolean" name="boolean" placeholder="Administrateur">
+
+
+
+
 					<input type="submit" name="enregistrer" value="Création">
 				</div>
 			</form>
