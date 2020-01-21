@@ -22,8 +22,9 @@ class Admin extends CI_Controller {
         	$this->load->view('admin/'.$page, $data);
         	$this->load->view('templates/footer', $data);
  		}
-		public function create_user()
+		public function create_user($page = 'admin_create_account')
 		{
+			$data['title'] = ucfirst($page);
 			$this->load->helper('form');
     		$this->load->library('form_validation');	
 

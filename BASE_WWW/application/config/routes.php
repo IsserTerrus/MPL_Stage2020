@@ -52,10 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'visiteur/view';
 
 $route['visiteur'] = 'visiteur/view'; //http://localhost/base_www/index.php/visiteur
-$route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index.php/public/public_photo
+//$route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index.php/public/public_photo
 
 $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
-$route['member/(:any)'] = 'membre/view/$1';
+//$route['member/(:any)'] = 'membre/view/$1';
 
 $route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
 $route['admin/(:any)'] = 'admin/view/$1';
