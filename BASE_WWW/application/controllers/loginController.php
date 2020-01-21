@@ -8,16 +8,16 @@ Class User_Authentication extends CI_Controller {
 		parent::__construct();
 
 		// Load form helper library
-		$this->load->helper('form');
+/*		$this->load->helper('form');*/
 
 		// Load form validation library
-		$this->load->library('form_validation');
+/*		$this->load->library('form_validation');*/
 
 		// Load session library
-		$this->load->library('session');
+/*		$this->load->library('session');*/
 
 		// Load database
-		$this->load->model('login_database');
+/*		$this->load->model('login_database');*/
 	}
 
 	// Show login page

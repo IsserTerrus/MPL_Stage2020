@@ -16,7 +16,7 @@
 
 		<!-- NavBar pour tout les utilisateurs -->
 		<nav class="navbar navbar-dark bg-dark">
-		  <a class="navbar-brand" href="#">
+		  <a class="navbar-brand" href="<?php echo site_url("visiteur/visiteur_index") ?>">
 		  	<img src="<?php echo base_url("assets/img/MaPhotoLink.png") ?>" width="250" height="70" alt="">
 		  </a>
 		    <ul class="nav-item text-center">

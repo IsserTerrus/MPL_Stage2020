@@ -5,7 +5,6 @@ class visiteur extends CI_Controller {
 
 		public function __construct(){
 			parent::__construct();
-			$this->load->helper('url');
 		}
 
 		public function view($page = 'visiteur_index')
@@ -20,5 +19,12 @@ class visiteur extends CI_Controller {
 			$this->load->view('templates/header', $data);
         	$this->load->view('visiteur/'.$page, $data);
         	$this->load->view('templates/footer', $data);
+ 		}
+
+ 		public function index_page()
+ 		{
+ 			$this->load->view('templates/header', $data);
+        	$this->load->view('visiteur/'.$page, $data);
+        	//$this->load->view('templates/footer', $data);
  		}
 }

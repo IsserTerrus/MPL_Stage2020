@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 // Version Classique
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/MPL_Stage2020/BASE_WWW/';
 
 // Version David
 //$config['base_url'] = 'http://'.$_SERVER['SERVER_ADDR'].':'.$_SERVER['SERVER_PORT'].'/MPL_2020/';
