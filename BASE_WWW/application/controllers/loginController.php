@@ -22,7 +22,7 @@ Class User_Authentication extends CI_Controller {
 
 	// Show login page
 	public function index() {
-		$this->load->view('login_form');
+		$this->load->view('member_identification');
 	}
 
 	// Check for user login process
@@ -33,13 +33,13 @@ Class User_Authentication extends CI_Controller {
 
 		if ($this->form_validation->run() == FALSE) {
 
-			if(isset($this->session->userdata['logged_in'])){
+			if(isset($this->session->userdata['member_identification'])){
 
-				$this->load->view('admin_page');
+				$this->load->view('admin_index');
 
 			} else {
 
-				$this->load->view('login_form');
+				$this->load->view('member_identification');
 			}
 
 		} else {
@@ -62,13 +62,13 @@ Class User_Authentication extends CI_Controller {
 
 					// Add user data in session
 					$this->session->set_userdata('logged_in', $session_data);
-					$this->load->view('admin_page');
+					$this->load->view('admin_index');
 				}
 			} else {
 
 				$data = array('error_message' => 'Invalid Username or Password');
 
-				$this->load->view('login_form', $data);
+				$this->load->view('member_identification', $data);
 			}
 		}	
 	}
@@ -83,7 +83,7 @@ Class User_Authentication extends CI_Controller {
 
 		$data['message_display'] = 'Successfully Logout';
 
-		$this->load->view('login_form', $data);
+		$this->load->view('public_index', $data);
 	}
 }
 

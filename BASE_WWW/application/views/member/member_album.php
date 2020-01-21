@@ -15,26 +15,26 @@
 					    <div class="card card-thumbnail">
 					      <div class="h-100">
 					        <a href="index/category/conventions" class="ripple d-block">
-					          <img class="card-img-top" src="assets/img/MaPhotoLink.png" alt="Conventions" title="Conventions - montre les photos à la racine de cet album">
+					          <img class="card-img-top" src="assets/img/MaPhotoLink.png" alt="Affiché des photos aléatoire de l'album" title="Conventions - montre les photos à la racine de cet album">
 					        </a>
 					        <div class="card-body">
 					          <h5 class="card-title ellipsis ">
-					          <a href="index/category/conventions">Conventions</a> <!-- titre de l'album -->
+					          <a href="index/category/conventions">Un titre</a> <!-- titre de l'album -->
 					          </h5>
 					          <div class="card-text">
 					              <div class="description  d-block"><p>
-									<em><span style="font-size:14px;">En Studio, Itin&eacute;rant ou sous Couverture, FOKUZA vous la fait revivre en image !</span></em></p> <!-- description de l'album -->
+									<em><span style="font-size:14px;">Une description</span></em></p> <!-- description de l'album -->
 								  </div>
 					          </div>
 					        </div>
-					        <div class="card-footer text-muted">
-					        	<div class="d-inline-block ellipsis">46377 photos dans 322 sous-albums</div>
-								  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-								  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>					        	
+					        <div class="card-footer text-muted text-center">
+					        	<div class="d-inline-block ellipsis">Des détails sur l'albums (nombre de photos, de sous albums si il en existe</div>
+								  <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+								  <button type="button" class="btn btn-sm btn-outline-secondary">Modifier</button>					        	
 					        </div>  <!-- information complémentaire -->				        
 					      </div>
 					    </div>
-					  </div>				
+					</div>				
 				</div>
 			</div>
 					

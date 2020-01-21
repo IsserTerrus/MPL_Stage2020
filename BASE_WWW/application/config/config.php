@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+// Version Classique
 $config['base_url'] = '';
+
+// Version David
+//$config['base_url'] = 'http://'.$_SERVER['SERVER_ADDR'].':'.$_SERVER['SERVER_PORT'].'/MPL_2020/';
 
 /*
 |--------------------------------------------------------------------------

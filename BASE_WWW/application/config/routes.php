@@ -49,10 +49,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'publique/view';
+$route['default_controller'] = 'visiteur/view';
 
-$route['public'] = 'publique/view'; //http://localhost/base_www/index.php/public
-$route['public/(:any)'] = 'publique/view/$1';//http://localhost/base_www/index.php/public/public_photo
+$route['visiteur'] = 'visiteur/view'; //http://localhost/base_www/index.php/visiteur
+$route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index.php/public/public_photo
 
 $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
 $route['member/(:any)'] = 'membre/view/$1';
