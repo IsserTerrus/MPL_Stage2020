@@ -58,6 +58,7 @@ $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
 $route['member/(:any)'] = 'membre/view/$1';
 
 $route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
+
 $route['admin/(:any)'] = 'admin/view/$1';
 
 $route['404_override'] = '';

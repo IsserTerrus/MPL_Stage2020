@@ -19,16 +19,7 @@
 						<p class="card-text"><small class="text-muted">Dernière modification</small></p>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-header">Modifier un utilisateur</div>
-					<div class="card-body">
-						<p class="card-text text-center">Vous avez la posibiliter de configurer un utilisateur</p><br>
-						<button class="btn btn-outline-dark btn-lg btn-block">Éditer un membre</button>
-					</div>
-					<div class="card-footer">
-						<p class="card-text"><small class="text-muted">Dernière modification</small></p>
-					</div>
-				</div>				
+						
 			</div>
 
 		</div>
