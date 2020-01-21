@@ -1,7 +1,7 @@
 
 		<footer class="pt-4  pt-md-5 border-top bg-light"> <!-- my-md-5 -->
-			<div class="container">	
-			    <div class="row">		    	
+			<div class="container">
+			    <div class="row">
 			     <div class="col-6 col-md">
 			        <h5>FOKUZA</h5>
 			        <ul class="list-unstyled text-small">
