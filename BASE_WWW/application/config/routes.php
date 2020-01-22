@@ -58,14 +58,7 @@ $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
 $route['member/(:any)'] = 'membre/view/$1';
 
 $route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
-
 $route['admin/(:any)'] = 'admin/view/$1';
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 7a5d08fea8f720185953093638bdce431bccb78c
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
