@@ -6,8 +6,18 @@ class Admin extends CI_Controller {
 
 
 		public function __construct(){
+
 			parent::__construct();
+			$this->load->model('test_model');
+            $this->load->helper('url_helper');
 		}
+
+		public function index()
+        {
+                $data['photographe'] = $this->news_model->get_photographe();
+        }
+
+
 
 		public function view($page = 'admin_index')
 		{
@@ -17,6 +27,8 @@ class Admin extends CI_Controller {
 			}
 
 			$data['title'] = ucfirst($page);
+			$data['photographe'] = $this->test_model->get_photographe();
+
 
 			$this->load->view('templates/header', $data);
         	$this->load->view('admin/'.$page, $data);
