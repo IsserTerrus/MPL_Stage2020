@@ -23,17 +23,11 @@
 			          <li><a class="text-muted" href="#">Adresse</a></li>
 			        </ul>
 			      </div>
-
-			      <div class="col-12 col-md">
-			        <img class="mb-2" src="" alt="" width="24" height="24">
-			        <small class="d-block mb-3 text-muted">
-				        	Site développé avec Code Igniter <br>
-				        	&copy; 
-			        	<script src="<?php echo base_url("assets/js/fonctions.js") ?>"></script>
-			        </small>
-			      </div>
 			    </div>
 			</div>
+			<div class="text-center py-3 bg-secondary text-white">&copy;
+			  <a href="https://www.fokuza.fr/" class="text-white">fokuza.fr</a>
+			</div>			
 		</footer>
 
 

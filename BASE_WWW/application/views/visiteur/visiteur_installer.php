@@ -46,7 +46,7 @@
 				<div class="jumbotron text-center bg-light">
 				  <h1>Contact</h1><br>
 				  <ul class="list-group">
-					<li class="list-group-item"><h3>Email: contact@fokusa.fr</h3></li><br>
+					<li class="list-group-item"><h3>Email: contact@fokuza.fr</h3></li><br>
 					<li class="list-group-item"><h3>Tél: 06.36.78.30.61</h3></li>
 				  </ul>
 				</div>	
