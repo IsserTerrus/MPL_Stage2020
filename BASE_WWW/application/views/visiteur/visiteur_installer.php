@@ -6,7 +6,7 @@
 				  <p class="lead">Pour pouvoir utiliser notre application, il vous est demandé avant tout d'avoir un compte adhérant.</p>
 				  <hr class="my-4">
 				  <p>Si vous avez déja un compte, cliquer directement sur le bouton juste en dessous.</p>
-				  <a class="btn btn-dark btn-lg" href="<?php echo base_url("application/views/member/member_identification.php") ?>" role="button">Connexion</a>
+				  <a class="btn btn-dark btn-lg" href="<?php echo site_url("member/member_identification") ?>" role="button">Connexion</a>
 				</div>  
 			</section>
 			<div class="container">
@@ -46,7 +46,7 @@
 				<div class="jumbotron text-center bg-light">
 				  <h1>Contact</h1><br>
 				  <ul class="list-group">
-					<li class="list-group-item"><h3>Email: contact@fokusa.fr</h3></li><br>
+					<li class="list-group-item"><h3>Email: contact@fokuza.fr</h3></li><br>
 					<li class="list-group-item"><h3>Tél: 06.36.78.30.61</h3></li>
 				  </ul>
 				</div>	

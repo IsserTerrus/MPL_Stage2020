@@ -10,29 +10,53 @@
 			</div> 			
 		</section>
 		<div class="container">
-			<form id="formulaireCreation">
-				<div class="form-group">
-					<label>Nom</label>
-					<input type="text" name="name" placeholder="Nom">
-					<label>Prénom</label>
-					<input type="text" name="firstname" placeholder="Prénom">
-					<label>Adresse</label>
-					<input type="text" name="adress" placeholder="Adresse">
-					<label>Email</label>
-					<input type="email" name="mail" placeholder="Email">
-					<label>Description</label>
-					<input type="text" name="desc" placeholder="Une description">
-					<label>Pseudo</label>
-					<input type="text" name="Pseudo" placeholder="Pseudo">
-					<label>Mot de passe</label>
-					<input type="password" name="nom" placeholder="Mot de passe">
-					<label>Administrateur</label>
-					<input type="boolean" name="boolean" placeholder="Administrateur">
+			<div class="card">
+				<div class="card-header bg-secondary text-white"><h1 class="display-4 text-center">Formulaire d'inscription</h1></div>
+				<div class="card-body">
+					<form id="formulaireCreation" class="bg-light text-center">
+						<div class="form-group">
+							<input type="text" name="pseudoName" placeholder="Pseudo" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<input type="text" name="adress" placeholder="Adresse" class="form-control" required>
+						</div>	
+						<div class="form-group">
+							<input type="text" name="mail" placeholder="Email" class="form-control" required>
+						</div>	
+						<div class="form-group">
+							<textarea placeholder="Description facultative" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>	
+						<div class="form-group">
+							<input type="text" name="pwd" placeholder="Mot de passe" class="form-control" required>
+						</div>
+						<button type="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#ModalConfirmation" class="mx-auto">Confirmation de l'inscription</button>
 
+						<!-- Modal -->
+						<div class="modal fade" id="ModalConfirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLongTitle">Confirmation des données du nouveau membre</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        Son pseudo: <br>
+						        Son adresse: <br>
+						        Son email: <br>
+						        Son mot de passe: <br>
 
-
-
-					<input type="submit" name="enregistrer" value="Création">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
+						        <button type="submit" class="btn btn-success">Confirmer</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>				
+					</form>
 				</div>
-			</form>
+			</div>
 		</div>
+		<br>
