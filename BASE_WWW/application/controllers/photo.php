@@ -7,10 +7,10 @@ class photo extends CI_Controller {
 			parent::__construct();
 		}
 
-		public function DonnerURL($idPhoto, $idPhotographe)
+		public function DonnerURL($idPhotographe)
 		{
 			$dateactuel = time();
-			$url = $dateactuel + $idPhoto + $idPhotographe;
+			$url = $dateactuel + $idPhotographe;
 			$url = base_convert(strval($url), 10, 32);
 			return $url;
  		}
