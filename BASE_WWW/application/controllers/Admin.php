@@ -47,14 +47,6 @@ class Admin extends CI_Controller {
  		}
 
 
-
-
-
-
-
-
-
-
 		public function create_user($page = 'admin_create_account')
 		{
 			$data['title'] = ucfirst($page);
