@@ -50,8 +50,11 @@ class Admin extends CI_Controller {
 		{
 			$data['title'] = ucfirst($page);	
 
-			$this->form_validation->set_rules('title', 'Title', 'required');
-		    $this->form_validation->set_rules('text', 'Text', 'required');
+			$this->form_validation->set_rules('pseudoName', 'Pseudo', 'required');
+		    $this->form_validation->set_rules('adress', 'Adresse', 'required');
+		    $this->form_validation->set_rules('mail', 'Email', 'required');
+		    $this->form_validation->set_rules('desc', 'Description facultative', 'required');
+		    $this->form_validation->set_rules('pwd', 'Password', 'required');
 
 		    if ($this->form_validation->run() === FALSE)
 		    {
@@ -62,7 +65,7 @@ class Admin extends CI_Controller {
 
 		    else
 		    {
-		    	 $this->news_model->set_news(); //Appel du model pour pouvoir procéder à l'insertion des éléments du formulaire
+		    	 $this->admin_model->set_photographe(); //Appel du model pour pouvoir procéder à l'insertion des éléments du formulaire
 		    	 $this->load->view('templates/success'); //Redirection vers une page pour avertir que l'utilisateur est créer
 		    }
  		} 		
