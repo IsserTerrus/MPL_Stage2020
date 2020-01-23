@@ -4,7 +4,7 @@
 class Admin extends CI_Controller {
 
 
-
+/*
 		public function index(){
 			$data['photographe'] = $this->test_model->get_photographe();
 
@@ -14,7 +14,7 @@ class Admin extends CI_Controller {
         	$this->load->view('admin/admin_compte', $data);
         	$this->load->view('templates/footer', $data);			
 
-		}
+		}*/
 
 /*		public function admin_compte($membre)
         {
@@ -29,29 +29,26 @@ class Admin extends CI_Controller {
 
 
 
-		public function view($photographe = null)
+		public function view($page = "admin_index")
 		{
-			$page = "admin_index";
 			$data['title'] = ucfirst($page);
+			$data['photographe'] = $this->admin_model->get_photographe();
 
-			$data['news_item'] = $this->test_model->get_photographe($photographe); 
-	
-			if(empty($data['news_item']))
+			if(!file_exists(APPPATH.'views/admin/'.$page.'.php'))
 			{
 				show_404();
 			}
 
 			$this->load->view('templates/header', $data);
-        	$this->load->view('admin/admin_index', $data);
+        	$this->load->view('admin/'.$page, $data);
         	$this->load->view('templates/footer', $data);
  		}
 
 
+
 		public function create_user($page = 'admin_create_account')
 		{
-			$data['title'] = ucfirst($page);
-			$this->load->helper('form');
-    		$this->load->library('form_validation');	
+			$data['title'] = ucfirst($page);	
 
 			$this->form_validation->set_rules('title', 'Title', 'required');
 		    $this->form_validation->set_rules('text', 'Text', 'required');
