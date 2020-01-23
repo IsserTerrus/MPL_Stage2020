@@ -5,35 +5,56 @@ class Admin extends CI_Controller {
 
 
 
-		public function __construct(){
+		public function index(){
+			$data['photographe'] = $this->test_model->get_photographe();
 
-			parent::__construct();
-			$this->load->model('test_model');
-            $this->load->helper('url_helper');
+			$data['title'] = "Photographe";
+
+			$this->load->view('templates/header', $data);
+        	$this->load->view('admin/admin_compte', $data);
+        	$this->load->view('templates/footer', $data);			
+
 		}
 
-		public function index()
+/*		public function admin_compte($membre)
         {
-                $data['photographe'] = $this->news_model->get_photographe();
-        }
+            $data['title'] = ucfirst($page);
+			$data['news_item'] = $this->test_model->get_photographe($membre); 
+
+			$this->load->view('templates/header', $data);
+        	$this->load->view('admin/admin_compte', $data);
+        	$this->load->view('templates/footer', $data);
+
+        }*/
 
 
 
-		public function view($page = 'admin_index')
+		public function view($photographe = null)
 		{
-			if(! file_exists(APPPATH.'views/admin/'.$page.'.php'))
+			$page = "admin_index";
+			$data['title'] = ucfirst($page);
+
+			$data['news_item'] = $this->test_model->get_photographe($photographe); 
+	
+			if(empty($data['news_item']))
 			{
 				show_404();
 			}
 
-			$data['title'] = ucfirst($page);
-			$data['photographe'] = $this->test_model->get_photographe();
-
-
 			$this->load->view('templates/header', $data);
-        	$this->load->view('admin/'.$page, $data);
+        	$this->load->view('admin/admin_index', $data);
         	$this->load->view('templates/footer', $data);
  		}
+
+
+
+
+
+
+
+
+
+
 		public function create_user($page = 'admin_create_account')
 		{
 			$data['title'] = ucfirst($page);

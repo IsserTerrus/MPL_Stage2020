@@ -17,34 +17,23 @@
 					</div>
 					<div class="card-footer">
 						<p class="card-text"><small class="text-muted">Dernière modification</small></p>
-				
-			<p>Liste des membres étant inscrit au service maphoto.link: </p><br>
+					</div>
+				</div>
+			</div>
+<p>Liste des membres étant inscrit au service maphoto.link: </p><br>
 
+<h2>Liste des photographes<h2>
 
+<?php foreach ($photographe as $news_item): ?>
 
-<h2><?php echo $title; ?></h2>
-
-<?php foreach ($photographe as $photographesssss): ?>
-
-        <?php echo $photographesssss['nomaffiche']; ?>
-		<?php echo $news_item['text']; ?>
-        
-      
+        <h3><?php echo $news_item['IDPHOTOGRAPHE']; ?></h3>
+        <div class="main bg-secondary">
+                <?php //echo $news_item['text']; ?>
+        </div>
+        <p><a href="<?php //echo site_url('news/'.$news_item['slug']); ?>">View article</a></p>
 
 <?php endforeach; ?>
 
-
-<?php
-echo '<h2>'.$photographe['nomaffiche'].'</h2>';
-echo $news_item['text'];
-
-?>
-
-
-
-	</div>
-				</div>
-			</div>
 
 
 

@@ -43,32 +43,6 @@
 					      <small class="text-muted">Dernière modification: </small>
 					    </div>
 					  </div>
-
-
-
-
-
-
-
-<?php foreach ($photographe as $photographesssss): ?>
-
-        <?php echo $photographe['nomaffiche']; ?>
-		<?php echo $photographesssss['idphotographe']; ?>
-        
-      
-
-<?php endforeach; ?>
-
-
-<?php
-echo '<h2>'.$photographe['nomaffiche'].'</h2>';
-echo $news_item['text'];
-
-?>
-
-
-
-
 				</div>
 			</div>
 			<br>
