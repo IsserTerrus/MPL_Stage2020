@@ -17,7 +17,7 @@
 				<div class="card-header bg-secondary text-white"><h1 class="display-4 text-center">Formulaire d'inscription</h1></div>
 				<div class="card-body">
 					<!-- <form id="formulaireCreation" class="bg-light text-center"> -->
-					<?php echo form_open('creation', $attributes) ?>	
+					<?php echo form_open('creation_user', $attributes) ?>	
 						<div class="form-group">
 							<input type="text" name="pseudoName" placeholder="Pseudo" class="form-control" required>
 						</div>
@@ -25,7 +25,7 @@
 							<input type="text" name="adress" placeholder="Adresse" class="form-control" required>
 						</div>	
 						<div class="form-group">
-							<input type="text" name="mail" placeholder="Email" class="form-control" required>
+							<input type="mail" name="mail" placeholder="Email" class="form-control" required>
 						</div>	
 						<div class="form-group">
 							<textarea placeholder="Description facultative" class="form-control" id="exampleFormControlTextarea1" name="desc" rows="3"></textarea>

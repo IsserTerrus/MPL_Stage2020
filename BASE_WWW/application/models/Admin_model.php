@@ -8,11 +8,10 @@ class Admin_model extends CI_Model {
         }
 
 		public function get_photographe()
-		 
-			{
-				$query = $this->db->get('photographe');
-			    return $query->result_array();
-			}
+		{
+			$query = $this->db->get('photographe');
+			return $query->result_array();
+		}
 
 		
 
@@ -34,8 +33,6 @@ class Admin_model extends CI_Model {
 
 			$this->db->where('IDPHOTOGRAPHE', $IDPHOTOGRAPHE);
 			$this->db->get('PHOTOGRAPHE');
-			
-
 
 			// $query = $this->db->get_where('PHOTOGRAPHE', array('IDPHOTOGRAPHE' => $IDPHOTOGRAPHE));
 			
@@ -44,19 +41,13 @@ class Admin_model extends CI_Model {
 			//  return $data;
 			// }
 			// return FALSE;
-		
-                
-		
-
 
 		}
 
-			public function delete_photographe($IDPHOTOGRAPHE)
+		public function delete_photographe($IDPHOTOGRAPHE)
 		{
-
 		    $this->db->where('IDPHOTOGRAPHE', $IDPHOTOGRAPHE);
 	       	$this->db->delete('PHOTOGRAPHE');
-
 	    }
 
 
