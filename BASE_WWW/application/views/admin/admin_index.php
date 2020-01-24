@@ -38,7 +38,7 @@
 					      <h5 class="card-title">Gestion des profils</h5>
 					      <p class="card-text">Administration, configuration et gestion de l'ensemble des profils de l'application.</p>
 					    </div>
-					    <a class="btn btn-outline-secondary" href="<?php echo site_url("admin_compte") ?>">Configurer</a>
+					    <a class="btn btn-outline-secondary" href="<?php echo site_url("admin/admin_compte") ?>">Configurer</a>
 					    <div class="card-footer">
 					      <small class="text-muted">Dernière modification: </small>
 					    </div>

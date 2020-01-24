@@ -13,7 +13,7 @@
 					<div class="card-header">Créer un nouvelle utilisateur</div>
 					<div class="card-body">
 						<p class="card-text text-center">Ajouter un nouvelle utilisateur en lui attribuant différentes données</p><br>
-						<a  class="btn btn-outline-success btn-lg btn-block" href="<?php echo site_url("admin_create_account") ?>">Ajouter un nouveau membre</a>
+						<a  class="btn btn-outline-success btn-lg btn-block" href="<?php echo site_url("admin/admin_create_account") ?>">Ajouter un nouveau membre</a>
 					</div>
 					<div class="card-footer">
 						<p class="card-text"><small class="text-muted">Dernière modification</small></p>
@@ -22,16 +22,35 @@
 			</div><br>
 
 			<h2>Liste des photographes</h2>
+			<table class="table">
+				<thead>
+					<tr class="table-secondary">
+						<th>Id</th>
+						<th>Pseudo</th>
+						<th>Adresse</th>
+						<th>Description</th>
+						<th>Mail</th>
+						<th>Admin</th>
+						<th colspan="2" class="text-center">Action</th>
+					</tr>
+					
+					<?php foreach ($photographe as $un_photographe){ ?>
+						<tr class="table-class">
+						    <td><p><?php echo $un_photographe['IDPHOTOGRAPHE']; ?></p></td>
+							<td><p><?php echo $un_photographe['NOMAFFICHE']; ?></p></td>
+							<td><p><?php echo $un_photographe['ADRESSE']; ?></p></td>
+							<td><p><?php echo $un_photographe['DESCRIPTION']; ?></p></td>	
+							<td><p><?php echo $un_photographe['MAIL']; ?></p></td>	
+							<td><p><?php echo $un_photographe['BOOLADMIN']; ?></p></td>
+							<td class="text-center"><button class="btn btn-success">Modifier</button></td>
+							<td class="text-center"><button class="btn btn-danger">Supprimer</button></td>						
+						</tr>
 
-			<?php foreach ($photographe as $un_photographe): ?>
-
-			        <h3><?php echo $un_photographe['NOMAFFICHE']; ?></h3>
-			        <div class="main bg-secondary">
-			                <?php //echo $news_item['text']; ?>
-			        </div>
-			        <p><a href="<?php echo site_url('photographe/'.$un_photographe['ADRESSE']); ?>">View article</a></p>
-
-			<?php endforeach; ?>
+					<?php } ?>						
+						
+					</tr>
+				</thead>
+		</table> 
 		</div>	
 
 
