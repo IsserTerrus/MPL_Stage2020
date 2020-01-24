@@ -19,9 +19,9 @@ class Admin extends CI_Controller {
 
 		public function view($page = "admin_index")
 		{
-			$data['photographe'] = $this->test_model->get_photographe();
+			$data['photographe'] = $this->admin_model->get_photographe();
 			
-			if(! file_exists(APPPATH.'views/admin/'.$page.'.php'))
+			if(!file_exists(APPPATH.'views/admin/'.$page.'.php'))
 
 			{
 				show_404();
