@@ -7,15 +7,14 @@ class Admin_model extends CI_Model {
                 $this->load->database();
         }
 
-		public function get_photographe($photographe = false)
-		{
-			if ($photographe === false) 
+		public function get_photographe()
+		 
 			{
 				$query = $this->db->get('photographe');
 			    return $query->result_array();
 			}
 
-		}
+		
 
 		public function set_photographe()
 		{
@@ -29,6 +28,37 @@ class Admin_model extends CI_Model {
 
 			return $this->db->insert('photographe', $data);
 		}
+
+		public function update_photographe($IDPHOTOGRAPHE)
+		{
+
+			$this->db->where('IDPHOTOGRAPHE', $IDPHOTOGRAPHE);
+			$this->db->get('PHOTOGRAPHE');
+			
+
+
+			// $query = $this->db->get_where('PHOTOGRAPHE', array('IDPHOTOGRAPHE' => $IDPHOTOGRAPHE));
+			
+			// if ($query->num_rows() > 0){
+			// 	$data = $query->row();
+			//  return $data;
+			// }
+			// return FALSE;
+		
+                
+		
+
+
+		}
+
+			public function delete_photographe($IDPHOTOGRAPHE)
+		{
+
+		    $this->db->where('IDPHOTOGRAPHE', $IDPHOTOGRAPHE);
+	       	$this->db->delete('PHOTOGRAPHE');
+
+	    }
+
 
 }
 

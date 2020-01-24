@@ -28,7 +28,7 @@
 						<th>Id</th>
 						<th>Pseudo</th>
 						<th>Adresse</th>
-						<th>Description</th>
+						<th>Description</th>         
 						<th>Mail</th>
 						<th>Admin</th>
 						<th colspan="2" class="text-center">Action</th>
@@ -42,8 +42,9 @@
 							<td><p><?php echo $un_photographe['DESCRIPTION']; ?></p></td>	
 							<td><p><?php echo $un_photographe['MAIL']; ?></p></td>	
 							<td><p><?php echo $un_photographe['BOOLADMIN']; ?></p></td>
-							<td class="text-center"><button class="btn btn-success">Modifier</button></td>
-							<td class="text-center"><button class="btn btn-danger">Supprimer</button></td>						
+							<td class="text-center"><a class="btn btn-success" href="<?php echo site_url('admin/admin_edit/').$un_photographe['IDPHOTOGRAPHE'] ; ?>">Modifier</a></td>
+
+							<td class="text-center"><a class="btn btn-danger" href="<?php echo site_url('admin/admin_delete/').$un_photographe['IDPHOTOGRAPHE'];?>">Supprimer</a></td>						
 						</tr>
 
 					<?php } ?>						

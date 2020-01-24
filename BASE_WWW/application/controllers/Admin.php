@@ -68,8 +68,54 @@ class Admin extends CI_Controller {
 		    	 $this->admin_model->set_photographe(); //Appel du model pour pouvoir procéder à l'insertion des éléments du formulaire
 		    	 $this->load->view('templates/success'); //Redirection vers une page pour avertir que l'utilisateur est créer
 		    }
- 		} 		
+ 		} 
+
+ 			public function update_user()
+
+ 			{
+ 			
+ 			
+ 			$id = $this->input->get('IDPHOTOGRAPHE');
+ 			$data[''] = $this->admin_model->update_photographe($id);
+
+
+ 		
+			$this->load->view('templates/header');
+        	$this->load->view('admin/admin_edit', $data);
+        	$this->load->view('templates/footer');
+
+ 			
+ 			
+        }
+ 			
+	       public function delete_photographe()
+	       {
+	        
+	        $IDPHOTOGRAPHE = $this->input->get('IDPHOTOGRAPHE');
+			$this->admin_model->delete_photographe($IDPHOTOGRAPHE);
+			
+
+			
+
+			$this->load->view('templates/header');
+			$this->load->view('templates/success');
+        	
+        	$this->load->view('templates/footer');
+
+ 			
+
+
+	       }
+
+
+
+
+
 }
+
+
+
+
 
 
 

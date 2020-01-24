@@ -17,7 +17,7 @@
 				<div class="card-header bg-secondary text-white"><h1 class="display-4 text-center">Formulaire d'inscription</h1></div>
 				<div class="card-body">
 					<!-- <form id="formulaireCreation" class="bg-light text-center"> -->
-					<?php echo form_open('admin/create_user', $attributes) ?>	
+					<?php echo form_open('creation', $attributes) ?>	
 						<div class="form-group">
 							<input type="text" name="pseudoName" placeholder="Pseudo" class="form-control" required>
 						</div>
