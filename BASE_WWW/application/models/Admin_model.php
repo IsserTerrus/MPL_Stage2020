@@ -7,13 +7,12 @@ class Admin_model extends CI_Model {
                 $this->load->database();
         }
 
-		public function get_photographe($photographe = false)
+		public function get_photographe()
 		{
-			if ($photographe === false) 
-			{
-				$query = $this->db->get('photographe');
-			    return $query->result_array();
-			}
+
+			$query = $this->db->get('photographe');
+		    return $query->result_array();
+
 
 		}
 

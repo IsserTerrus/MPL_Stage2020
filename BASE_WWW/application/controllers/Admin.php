@@ -16,18 +16,6 @@ class Admin extends CI_Controller {
 
 		}*/
 
-/*		public function admin_compte($membre)
-        {
-            $data['title'] = ucfirst($page);
-			$data['news_item'] = $this->test_model->get_photographe($membre); 
-
-			$this->load->view('templates/header', $data);
-        	$this->load->view('admin/admin_compte', $data);
-        	$this->load->view('templates/footer', $data);
-
-        }*/
-
-
 
 		public function view($page = "admin_index")
 		{

@@ -11,12 +11,12 @@
 			<div class="container">
 				<div class="card-deck">
 					<div class="card">
-					    <div class="card-header bg-dark text-white"><i class="fas fa-users-cog"></i>fgfg</div>
+					    <img src="<?php echo base_url("assets/img/Amon_and_his_Equalists.png") ?>" class="card-img-top" alt="...">
 					    <div class="card-body">
 					      <h5 class="card-title">Gestion des photos</h5>
 					      <p class="card-text">Administration, configuration et gestion de l'ensemble des photos de l'application.</p>
 					    </div>
-					    <button class="btn btn-outline-secondary">Configurer</button>
+					    <a class="btn btn-outline-secondary" href="<?php echo site_url("admin/admin_photo") ?>">Configurer</a>
 					    <div class="card-footer">
 					      <small class="text-muted">Dernière modification: </small>
 					    </div>
@@ -27,7 +27,7 @@
 					      <h5 class="card-title">Gestion des albums</h5>
 					      <p class="card-text">Administration, configuration et gestion de l'ensemble des albums de l'application.</p>
 					    </div>
-					    <button class="btn btn-outline-secondary">Configurer</button>
+					    <a class="btn btn-outline-secondary" href="<?php echo site_url("admin/admin_album") ?>">Configurer</a>
 					    <div class="card-footer">
 					      <small class="text-muted">Dernière modification: </small>
 					    </div>
