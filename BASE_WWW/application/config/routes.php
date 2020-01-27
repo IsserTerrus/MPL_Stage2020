@@ -57,6 +57,8 @@ $route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index
 $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
 $route['member/(:any)'] = 'membre/view/$1';
 
+
+$route['creation'] = "admin/create_user";
 $route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
 $route['admin/(:any)'] = 'admin/view/$1';
 $route['admin/admin_edit/(:any)'] = 'admin/update_user';
