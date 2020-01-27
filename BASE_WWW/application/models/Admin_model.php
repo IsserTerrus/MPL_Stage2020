@@ -28,19 +28,24 @@ class Admin_model extends CI_Model {
 			return $this->db->insert('photographe', $data);
 		}
 
-		public function update_photographe($IDPHOTOGRAPHE)
+/*	public function affiche($IDPHOTOGRAPHE)
+		{
+			
+			$query = $this->db->query('SELECT * FROM PHOTOGRAPHE');
+			$row = $query->row();
+			return $row;
+		}*/
+
+		public function get_user_by_id($IDPHOTOGRAPHE)
 		{
 
-			$this->db->where('IDPHOTOGRAPHE', $IDPHOTOGRAPHE);
-			$this->db->get('PHOTOGRAPHE');
+		/*	$query = $this->db->where('IDPHOTOGRAPHE', $IDPHOTOGRAPHE);
+			$query = $this->db->get('photographe');
+			return $query->result();*/
 
-			// $query = $this->db->get_where('PHOTOGRAPHE', array('IDPHOTOGRAPHE' => $IDPHOTOGRAPHE));
-			
-			// if ($query->num_rows() > 0){
-			// 	$data = $query->row();
-			//  return $data;
-			// }
-			// return FALSE;
+			$query = $this->db->get_where('photographe', array('IDPHOTOGRAPHE' => $IDPHOTOGRAPHE));
+        	return $query->row_array();
+
 
 		}
 

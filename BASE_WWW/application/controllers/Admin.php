@@ -66,11 +66,27 @@ class Admin extends CI_Controller {
 				die('Erreur ID Photographe NULLE !');
 
 			$id = $this->input->get('IDPHOTOGRAPHE');
-			$data['INFOPHOTOG'] = $this->admin_model->update_photographe($id);
+			//$data['INFOPHOTOG'][] = $this->admin_model->update_photographe($id);
 
 			$this->load->view('templates/header');
 			$this->load->view('admin/admin_edit', $data);
 			$this->load->view('templates/footer');
+		}
+
+		public function get_user($IDPHOTOGRAPHE){
+
+			$data['title'] = ucfirst("admin_edit");	
+		
+
+			if($IDPHOTOGRAPHE === NULL)
+				die('Erreur ID Photographe NULLE !'); 
+
+			$data['photographe'] = $this->admin_model->get_user_by_id($IDPHOTOGRAPHE);
+
+			$this->load->view('templates/header', $data);
+			$this->load->view('admin/admin_edit', $data);
+			$this->load->view('templates/footer');
+
 		}
 		
 		public function delete_photographe()
@@ -82,10 +98,6 @@ class Admin extends CI_Controller {
 			$this->load->view('templates/success');		
 			$this->load->view('templates/footer');
 		}
-
-
-
-
 
 }
 
