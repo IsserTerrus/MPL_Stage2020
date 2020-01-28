@@ -51,6 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'visiteur/view';
 
+$route['about'] = 'visiteur/about';
+
 $route['visiteur'] = 'visiteur/view'; //http://localhost/base_www/index.php/visiteur
 $route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index.php/public/public_photo
 
@@ -58,11 +60,11 @@ $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
 $route['member/(:any)'] = 'membre/view/$1';
 
 
-$route['creation'] = "admin/create_user";
 $route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
-$route['admin/admin_edit/(:any)'] = 'admin/get_user/$1';
-$route['admin/admin_delete/(:any)'] = 'admin/delete_photographe';
-$route['creation_user'] = 'admin/create_user';
+$route['admin/admin_get_photographe/(:any)'] = 'admin/get_photographe/$1';
+$route['admin/admin_edit_photographe/(:any)'] = 'admin/update_photographe/$1';
+$route['admin/admin_delete_photographe/(:any)'] = 'admin/delete_photographe/$1';
+$route['creation_photographe'] = 'admin/create_photographe';
 $route['admin/(:any)'] = 'admin/view/$1';
 
 $route['404_override'] = '';

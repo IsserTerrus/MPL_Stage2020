@@ -27,4 +27,12 @@ class visiteur extends CI_Controller {
         	$this->load->view('visiteur/'.$page, $data);
         	//$this->load->view('templates/footer', $data);
  		}
+
+
+ 		public function about()
+ 		{
+ 			$this->load->view('templates/header');
+ 			$this->load->view('templates/about');
+ 			$this->load->view('templates/footer');
+ 		}
 }

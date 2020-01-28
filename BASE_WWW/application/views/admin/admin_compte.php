@@ -42,9 +42,9 @@
 							<td><p><?php echo $un_photographe['DESCRIPTION']; ?></p></td>	
 							<td><p><?php echo $un_photographe['MAIL']; ?></p></td>	
 							<td><p><?php echo $un_photographe['BOOLADMIN']; ?></p></td>
-							<td class="text-center"><a class="btn btn-success" href="<?php echo site_url('admin/admin_edit/').$un_photographe['IDPHOTOGRAPHE'] ; ?>">Modifier</a></td>
+							<td class="text-center"><a class="btn btn-success" href="<?php echo site_url('admin/admin_get_photographe/').$un_photographe['IDPHOTOGRAPHE'] ; ?>">Modifier</a></td>
 
-							<td class="text-center"><a class="btn btn-danger" href="<?php echo site_url('admin/admin_delete/').$un_photographe['IDPHOTOGRAPHE'];?>">Supprimer</a></td>						
+							<td class="text-center"><a class="btn btn-danger" href="<?php echo site_url('admin/admin_delete_photographe/').$un_photographe['IDPHOTOGRAPHE'];?>">Supprimer</a></td>						
 						</tr>
 
 					<?php } ?>						
