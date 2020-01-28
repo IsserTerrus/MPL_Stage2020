@@ -78,7 +78,7 @@ class Admin extends CI_Controller {
 		    		"DESCRIPTION" => $this->input->post("desc"),
 		    		"PASSWORD" => $this->input->post("pwd"),
 		    	);
-		    	 $this->admin_model->update_photographe($data_update, $this->input->post("hidden_id")); //Appel du model pour pouvoir procéder à l'insertion des éléments du formulaire
+		    	 $this->admin_model->update_photographe($data_update, $this->input->post("id_hidden")); //Appel du model pour pouvoir procéder à l'insertion des éléments du formulaire
 		    	 $this->load->view('templates/success'); //Redirection vers une page pour avertir que l'utilisateur est créer
 		    }
 		}
