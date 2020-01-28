@@ -62,7 +62,8 @@ $route['member/(:any)'] = 'membre/view/$1';
 
 $route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
 $route['admin/admin_get_photographe/(:any)'] = 'admin/get_photographe/$1';
-$route['admin/admin_edit_photographe/(:any)'] = 'admin/update_photographe/$1';
+$route['admin/admin_edit_photographe'] = 'admin/update_photographe';
+$route['admin/admin_edit_photographe/(:any)'] = 'admin/update_photographe';
 $route['admin/admin_delete_photographe/(:any)'] = 'admin/delete_photographe/$1';
 $route['creation_photographe'] = 'admin/create_photographe';
 $route['admin/(:any)'] = 'admin/view/$1';

@@ -53,7 +53,7 @@ class Admin extends CI_Controller {
 			$id_photographe = $this->uri->segment(3);
 
 			$data['photographe'] = $this->admin_model->get_photographe_by_id($id_photographe);
-			//$data[''] = ;
+
 
 			$this->form_validation->set_rules('pseudoName', 'Pseudo', 'required');
 			$this->form_validation->set_rules('adress', 'Adresse', 'required');
@@ -70,7 +70,15 @@ class Admin extends CI_Controller {
 
 		    else
 		    {
-		    	 $this->admin_model->update_photographe($data, $this->input->post("IDPHOTOGRAPHE")); //Appel du model pour pouvoir procéder à l'insertion des éléments du formulaire
+
+		    	$data_update = array(
+		    		"NOMAFFICHE" => $this->input->post("pseudoName"),
+		    		"ADRESSE" => $this->input->post("adress"),
+		    		"MAIL" => $this->input->post("mail"),
+		    		"DESCRIPTION" => $this->input->post("desc"),
+		    		"PASSWORD" => $this->input->post("pwd"),
+		    	);
+		    	 $this->admin_model->update_photographe($data_update, $this->input->post("hidden_id")); //Appel du model pour pouvoir procéder à l'insertion des éléments du formulaire
 		    	 $this->load->view('templates/success'); //Redirection vers une page pour avertir que l'utilisateur est créer
 		    }
 		}
