@@ -25,4 +25,3 @@
 			  <a href="<?php echo site_url("visiteur/visiteur_installer"); ?>"><button class="btn btn-outline-secondary" type="button">S'inscrire</button></a>
 		    </ul>		  
 		</nav>	
-		</nav>	
