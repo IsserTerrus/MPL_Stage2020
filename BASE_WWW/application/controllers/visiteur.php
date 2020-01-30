@@ -38,4 +38,14 @@ class visiteur extends CI_Controller {
  			$this->load->view('templates/about');
  			$this->load->view('templates/footer');
  		}
+
+ 		public function getListeAlbums()
+ 		{
+ 			
+ 		}
+
+ 		public function getListePhotos()
+ 		{
+ 			
+ 		}
 }

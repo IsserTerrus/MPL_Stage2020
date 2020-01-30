@@ -1,4 +1,6 @@
 
+<?php /**/ /*$error;*/?>
+
 
 		<section class="jumbotron text-center">
 			<div class="container">
@@ -7,9 +9,15 @@
 			</div>  
 		</section>
 		<div class="container">
-			<div class="text-center">
-			  <input type="file" id="input-file-now" class="file-upload" />
-			</div>
+			<?php echo form_open_multipart('Membre/upload');?>
+
+			<label>Ajouter une photo</label>
+			<input class="buttonAddFile" type="file" name="userfile" size="20" />
+
+			<br><br>
+
+			<input type="submit" class="btn btn-secondary btn-lg" value="Ajouter la photo" />
+
+			</form>
 			<br>
-			
 		</div>

@@ -16,7 +16,9 @@
 						</div>
 						<div class="card-body">
 							<p class="text-center">Administrer les albums</p>
-							<a href="" class="btn btn-lg btn-secondary btn-block">Configuration</a>
+							<a class="btn btn-lg btn-secondary btn-block" href="<?php echo site_url("admin/admin_gestion_album") ?>">Configuration
+
+							</a>
 						</div>
 					</div>
 					<div class="card">

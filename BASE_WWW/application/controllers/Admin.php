@@ -25,7 +25,7 @@ class Admin extends CI_Controller {
 
 		public function create_photographe($page = 'admin_create_account')
 		{
-			$data['title'] = ucfirst($page);	
+			$data['title'] = ucfirst("Création d'un membre");	
 
 			$this->form_validation->set_rules('pseudoName', 'Pseudo', 'required');
 			$this->form_validation->set_rules('adress', 'Adresse', 'required');
@@ -108,6 +108,23 @@ class Admin extends CI_Controller {
 			$this->load->view('templates/success');		
 			$this->load->view('templates/footer');
 		}
+
+
+		
+		public function get_album($page ="admin_gestion_album"){
+
+			$data['title'] = ucfirst("admin_gestion_album");
+			
+			$data['album'] = $this->admin_model->get_album();			
+	
+
+			$this->load->view('templates/header', $data);
+			$this->load->view('admin/admin_gestion_album', $data);
+			$this->load->view('templates/footer');
+
+		}
+
+		
 
 }
 

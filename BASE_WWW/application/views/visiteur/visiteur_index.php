@@ -87,7 +87,7 @@
 			      <div class="card-body text-center">
 			        <h5 class="card-title">Voir les photos</h5>
 			        <p class="card-text">Consulter la liste des photos accessible au public</p>
-			        <a href="<?php echo site_url('visiteur/liste_photos') ?>" class="btn btn-dark">Consulter</a>
+			        <a href="<?php echo site_url('visiteur/liste_photos') ?>" class="btn btn-dark btn-lg btn-block">Consulter</a>
 			      </div>
 			    </div>
 			  </div>
@@ -97,7 +97,7 @@
 			      <div class="card-body text-center">
 			        <h5 class="card-title">Liste des albums</h5>
 			        <p class="card-text">Consulter la liste des albums disponible au public</p>
-			        <a href="<?php echo site_url('visiteur/liste_albums') ?>" class="btn btn-dark">Consulter</a>
+			        <a href="<?php echo site_url('visiteur/liste_albums') ?>" class="btn btn-dark btn-lg btn-block">Consulter</a>
 			      </div>
 			    </div>
 			  </div>

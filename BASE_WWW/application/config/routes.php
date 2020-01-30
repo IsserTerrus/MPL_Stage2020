@@ -58,14 +58,29 @@ $route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index
 
 $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
 $route['member/(:any)'] = 'membre/view/$1';
+$route['album_creation'] = 'membre/set_Album';
+
+
+
 
 
 $route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
+
+//GESTION DES PROFILS
 $route['admin/admin_get_photographe/(:any)'] = 'admin/get_photographe/$1';
 $route['admin/admin_edit_photographe'] = 'admin/update_photographe';
 $route['admin/admin_edit_photographe/(:any)'] = 'admin/update_photographe';
 $route['admin/admin_delete_photographe/(:any)'] = 'admin/delete_photographe/$1';
 $route['creation_photographe'] = 'admin/create_photographe';
+
+//GESTION DES ALBUMS
+$route['admin/admin_gestion_album'] = 'admin/get_album';
+// $route['admin/admin_gestion_album'] = 'admn/delete_album';
+
+
+
+
+
 $route['admin/(:any)'] = 'admin/view/$1';
 
 $route['404_override'] = '';

@@ -48,7 +48,8 @@
 			</div><br>
 
 			<div class="text-center">
-				<a class="btn btn-dark btn-lg" href="#" role="button">Ajouter une photo</a>
+				<a class="btn btn-dark btn-lg" href="<?php echo site_url("member/member_create_photo"); ?>" role="button" >Ajouter une photo</a>
+				<button class="btn btn-dark btn-lg" href="#" role="button" disabled >Voir vos photos</button>
 				<a class="btn btn-dark btn-lg" href="#" role="button">Voir vos photos</a>
 			</div>	
 			<hr class="my-4">	
@@ -88,7 +89,8 @@
 			</div> <br>
 
 			<div class="text-center">
-				<a class="btn btn-dark btn-lg" href="#" role="button">Ajouter un album</a>
+				<a class="btn btn-dark btn-lg" href="<?php echo site_url("member/member_create_album"); ?>" role="button">Ajouter un album</a>
+				<button class="btn btn-dark btn-lg" href="#" role="button" disabled >Voir vos albums</button>
 				<a class="btn btn-dark btn-lg" href="#" role="button">Voir vos albums</a>
 			</div>
 			<hr class="my-4">

@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<!-- BootStrap css -->
-		<link rel="stylesheet" href="<?php echo site_url("assets/css/all.css") ?>">
+		<link rel="stylesheet" href="<?php echo base_url("assets/css/custom.css") ?>">
+		<link rel="stylesheet" href="<?php echo base_url("assets/css/all.css") ?>">
 		<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>" />
 		<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css.map"); ?>" />
 		<link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap-grid.min.css"); ?>" />

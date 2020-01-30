@@ -48,6 +48,11 @@ class Admin_model extends CI_Model {
 	       	$this->db->delete('PHOTOGRAPHE');
 	    }	    
 
+	    	public function get_album()
+		{
+			$query = $this->db->get('album');
+			return $query->result_array();
+		}
 
 }
 
