@@ -25,7 +25,7 @@ class Admin extends CI_Controller {
 
 		public function create_photographe($page = 'admin_create_account')
 		{
-			$data['title'] = ucfirst($page);	
+			$data['title'] = ucfirst("Création d'un membre");	
 
 			$this->form_validation->set_rules('pseudoName', 'Pseudo', 'required');
 			$this->form_validation->set_rules('adress', 'Adresse', 'required');

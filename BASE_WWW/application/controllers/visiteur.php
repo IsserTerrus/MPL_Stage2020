@@ -31,8 +31,21 @@ class visiteur extends CI_Controller {
 
  		public function about()
  		{
- 			$this->load->view('templates/header');
+
+ 			$data['title'] = ucfirst("À propos");
+
+ 			$this->load->view('templates/header', $data);
  			$this->load->view('templates/about');
  			$this->load->view('templates/footer');
+ 		}
+
+ 		public function getListeAlbums()
+ 		{
+ 			
+ 		}
+
+ 		public function getListePhotos()
+ 		{
+ 			
  		}
 }
