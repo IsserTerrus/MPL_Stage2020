@@ -58,6 +58,7 @@ $route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index
 
 $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
 $route['member/(:any)'] = 'membre/view/$1';
+$route['album_creation'] = 'membre/set_Album';
 
 
 $route['admin'] = 'admin/view';//http://localhost/base_www/index.php/admin
