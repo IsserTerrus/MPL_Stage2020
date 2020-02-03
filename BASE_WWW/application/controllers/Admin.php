@@ -109,6 +109,23 @@ class Admin extends CI_Controller {
 			$this->load->view('templates/footer');
 		}
 
+
+		
+		public function get_album($page ="admin_gestion_album"){
+
+			$data['title'] = ucfirst("admin_gestion_album");
+			
+			$data['album'] = $this->admin_model->get_album();			
+	
+
+			$this->load->view('templates/header', $data);
+			$this->load->view('admin/admin_gestion_album', $data);
+			$this->load->view('templates/footer');
+
+		}
+
+		
+
 }
 
 

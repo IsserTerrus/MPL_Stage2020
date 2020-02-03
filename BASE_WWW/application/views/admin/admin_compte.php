@@ -21,6 +21,8 @@
 				</div>
 			</div><br>
 
+
+
 			<h2>Liste des photographes</h2>
 			<table class="table">
 				<thead>
@@ -52,25 +54,5 @@
 					</tr>
 				</thead>
 		</table> 
-		</div>	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		</div>
+			</div>	
+				</div>

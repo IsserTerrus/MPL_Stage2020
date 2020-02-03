@@ -5,7 +5,7 @@
 			     <div class="col-6 col-md">
 			        <h5>FOKUZA</h5>
 			        <ul class="list-unstyled text-small">
-			          <li><a class="text-muted" href="<?php echo base_url("https://www.fokuza.fr/") ?>">Site internet</a></li>
+			          <li><a class="text-muted" href="https://www.fokuza.fr/">Site internet</a></li>
 			        </ul>
 			      </div>
 
