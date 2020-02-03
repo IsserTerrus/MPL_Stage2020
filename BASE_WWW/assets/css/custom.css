@@ -3,10 +3,17 @@
     botom: 0;
 }
 
-input[type="file"] {
-	display: none;
-}
+
 
 .buttonAddFile {
 	display: none;
+	height: 75px;
+
 }
+
+label {
+
+}
+
+
+
