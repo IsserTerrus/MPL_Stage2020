@@ -1,35 +1,53 @@
 <?php
 
-session_start(); //we need to start session in order to access it through CI
 
-Class User_Authentication extends CI_Controller {
+Class loginController extends CI_Controller {
 
-	public function __construct() {
-		parent::__construct();
-
-		// Load form helper library
-/*		$this->load->helper('form');*/
-
-		// Load form validation library
-/*		$this->load->library('form_validation');*/
-
-		// Load session library
-/*		$this->load->library('session');*/
-
-		// Load database
-/*		$this->load->model('login_database');*/
-	}
 
 	// Show login page
 	public function index() {
 		$this->load->view('member_identification');
+
 	}
 
-	// Check for user login process
+	
+
+	public function login()
+	{
+
+		$dataArray['pseudo'] = $this->input->post('pseudo');
+		$dataArray['password'] = hash($this->input->post('password'));
+
+		$validation = $this->login_model->validate($dataArray);
+
+		if ($validation) 
+		{
+			echo "Connection établie";
+		}
+		else
+		{
+			redirect('member/member_identification');
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// Check for user login process ////// méthode pas encore au point
 	public function user_login_process() {
 
-		$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
-		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean');
+/*		$this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean');*/
+
 
 		if ($this->form_validation->run() == FALSE) {
 

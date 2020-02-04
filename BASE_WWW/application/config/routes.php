@@ -57,6 +57,7 @@ $route['visiteur'] = 'visiteur/view'; //http://localhost/base_www/index.php/visi
 $route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index.php/public/public_photo
 
 $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
+$route['member/login'] = 'loginController/login';
 $route['member/(:any)'] = 'membre/view/$1';
 $route['album_creation'] = 'membre/set_Album';
 
