@@ -15,7 +15,7 @@
 
 		<!-- NavBar pour les membres connectés -->	
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		  <a class="navbar-brand" href="<?php echo base_url("application/views/public/public_index.php") ?>">
+		  <a class="navbar-brand" href="<?php echo site_url("member") ?>">
 		  	<!--MaPhoto.Link -->
 		  	<img src="<?php echo base_url("assets/img/MaPhotoLink.png") ?>" width="250" height="70" alt="">
 		  </a>
@@ -39,7 +39,7 @@
 		      </li>     			            		      
 		    </ul>
 		    <ul class="nav-item text-center">
-			  <a href="<?php echo base_url("application/views/member/member_identification"); ?>"><button class="btn btn-outline-success" type="button">Déconnexion</button></a>
+			  <a href="<?php echo site_url("deconnection"); ?>"><button class="btn btn-outline-success" type="button">Déconnexion</button></a>
 		    </ul>
 		  </div>
 		</nav>

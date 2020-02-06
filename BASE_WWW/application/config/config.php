@@ -23,6 +23,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+
+//Partie développer:
+// Sel de chriffrage pour les mots de passe:
+$config['sel'] = 'ytufgf?ncryptaz&er4tw6y!';
+
+
 // Version Classique
 $config['base_url'] = 'http://localhost/MPL_Stage2020/BASE_WWW/';
 

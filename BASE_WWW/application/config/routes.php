@@ -54,7 +54,9 @@ $route['default_controller'] = 'visiteur/view';
 $route['about'] = 'visiteur/about';
 
 $route['visiteur'] = 'visiteur/view'; //http://localhost/base_www/index.php/visiteur
-$route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index.php/public/public_photo
+$route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index.php/public/nom_de_la_vue
+$route['connection'] = 'loginController/index';
+$route['deconnection'] = 'loginController/logout';
 
 $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
 $route['member/login'] = 'loginController/login';

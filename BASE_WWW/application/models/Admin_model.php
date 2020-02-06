@@ -20,16 +20,8 @@ class Admin_model extends CI_Model {
         	return $query->row_array();
 		}		
 
-		public function set_photographe()
+		public function set_photographe($data)
 		{
-			$data = array(
-				'NOMAFFICHE' => $this->input->post('pseudoName'),
-				'ADRESSE' => $this->input->post('adress'),
-				'DESCRIPTION' => $this->input->post('desc'),
-				'MAIL' => $this->input->post('mail'),
-				'PASSWORD' => hash($this->input->post('pwd'))
-			);
-
 			return $this->db->insert('photographe', $data);
 		}
 

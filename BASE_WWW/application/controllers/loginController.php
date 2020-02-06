@@ -3,32 +3,87 @@
 
 Class loginController extends CI_Controller {
 
+	public function __construct()
+	{
+		parent::__construct();
+/*		if ($this->session->userdata()) 
+		{
+			if ($this->session->userdata('Admin')) 
+			{
+				redirect('admin');
+			}
+			else redirect ('member');
+		}*/
+	}
 
-	// Show login page
+
+	//Affichage du formulaire de connexion
 	public function index() {
-		$this->load->view('member_identification');
+
+		$data['title'] = ucfirst("Connexion - FOKUZA");
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('member/member_identification');
+		$this->load->view('templates/footer');
 
 	}
 
-	
-
+	//Connexion d'un membre
 	public function login()
 	{
 
-		$dataArray['pseudo'] = $this->input->post('pseudo');
-		$dataArray['password'] = hash($this->input->post('password'));
+        $this->form_validation->set_rules('pseudo', 'Pseudo', 'required');
+        $this->form_validation->set_rules('password', 'Password', 'required');
 
-		$validation = $this->login_model->validate($dataArray);
+		if ($this->form_validation->run() === FALSE) 
+		{
+			redirect('visiteur/connection');
+		}
 
-		if ($validation) 
+		else 
 		{
-			echo "Connection établie";
+
+			$sel = $this->config->item('sel');
+			$dataArray['NOMAFFICHE'] = $this->input->post('pseudo');
+			$dataArray['PASSWORD'] = hash('sha256', $sel.$this->input->post('password'));
+
+			$data = $this->login_model->validate($dataArray);
+
+			if ($data) 
+			{
+				if ($data->IDPHOTOGRAPHE === 12) {
+					$this->session->set_userdata("Admin", $data);
+					redirect('admin');
+				}
+				else
+				{
+					$this->session->set_userdata("Membre", $data);
+					redirect('member');
+				}
+			}
+			else
+			{
+				echo "erreur ici";
+			}			
 		}
-		else
-		{
-			redirect('member/member_identification');
-		}
+
 	}
+
+	//Déconnexion d'un membre
+	public function logout() {
+
+		//Suppression de la session
+		unset(
+				$_SESSION['Admin'],
+				$_SESSION['Membre']
+		);
+
+		$data['message_display'] = 'Successfully Logout';
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/success', $data);
+		$this->load->view('templates/footer', $data);
+	}	
 
 
 
@@ -89,19 +144,6 @@ Class loginController extends CI_Controller {
 				$this->load->view('member_identification', $data);
 			}
 		}	
-	}
-
-	// Logout from admin page
-	public function logout() {
-
-		// Removing session data
-		$sess_array = array('username' => '');
-
-		$this->session->unset_userdata('logged_in', $sess_array);
-
-		$data['message_display'] = 'Successfully Logout';
-
-		$this->load->view('public_index', $data);
 	}
 }
 

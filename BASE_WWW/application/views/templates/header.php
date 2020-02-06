@@ -22,7 +22,7 @@
 		  	<img src="<?php echo base_url("assets/img/MaPhotoLink.png") ?>" width="250" height="70" alt="">
 		  </a>
 		    <ul class="nav-item text-center">
-			  <a href="<?php echo site_url("member/member_identification"); ?>"><button class="btn btn-outline-success" type="button">Connexion</button></a>
+			  <a href="<?php echo site_url("connection"); ?>"><button class="btn btn-outline-success" type="button">Connexion</button></a>
 			  <a href="<?php echo site_url("visiteur/visiteur_installer"); ?>"><button class="btn btn-outline-secondary" type="button">S'inscrire</button></a>
 		    </ul>		  
 		</nav>	

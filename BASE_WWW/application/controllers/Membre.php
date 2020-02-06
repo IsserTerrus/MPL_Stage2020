@@ -7,10 +7,14 @@ class Membre extends CI_Controller {
 
 		public function __construct(){
 			parent::__construct();
+			if (!$this->session->userdata('Admin') || !$this->session->userdata('Membre')) {
+				redirect('connection');
+			}
 		}
 
-		public function view($page = 'member_identification')
+		public function view($page = 'member_index')
 		{
+
 			if(! file_exists(APPPATH.'views/member/'.$page.'.php'))
 			{
 				show_404();
@@ -18,7 +22,7 @@ class Membre extends CI_Controller {
 
 			$data['title'] = ucfirst($page);
 
-			$this->load->view('templates/header', $data);
+			$this->load->view('templates/header_connect', $data);
         	$this->load->view('member/'.$page, $data);
         	$this->load->view('templates/footer', $data);
 
@@ -43,7 +47,7 @@ class Membre extends CI_Controller {
 
 		    if ($this->form_validation->run() === FALSE)
 		    {
-				$this->load->view('templates/header', $data);
+				$this->load->view('templates/header_connect', $data);
 	        	$this->load->view('member/member_create_album', $data);
 	        	$this->load->view('templates/footer');   	
 		    }
@@ -51,7 +55,7 @@ class Membre extends CI_Controller {
 		    {
 		    	$this->membre_model->set_album();
 
-				$this->load->view('templates/header', $data);
+				$this->load->view('templates/header_connect', $data);
 	        	$this->load->view('templates/success', $data);
 	        	$this->load->view('templates/footer');
 		    }
