@@ -8,7 +8,7 @@ class Membre extends CI_Controller {
 		public function __construct(){
 			parent::__construct();
 			if (!$this->session->userdata('Admin') || !$this->session->userdata('Membre')) {
-				redirect('connection');
+				//redirect('connection');
 			}
 		}
 

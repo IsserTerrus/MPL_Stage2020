@@ -55,11 +55,11 @@ $route['about'] = 'visiteur/about';
 
 $route['visiteur'] = 'visiteur/view'; //http://localhost/base_www/index.php/visiteur
 $route['visiteur/(:any)'] = 'visiteur/view/$1';//http://localhost/base_www/index.php/public/nom_de_la_vue
-$route['connection'] = 'loginController/index';
-$route['deconnection'] = 'loginController/logout';
+$route['connection'] = 'Login/index';
+$route['deconnection'] = 'Logout/disconnect';
 
 $route['member'] = 'membre/view';//http://localhost/base_www/index.php/member
-$route['member/login'] = 'loginController/login';
+$route['member/login'] = 'Login/connect';
 $route['member/(:any)'] = 'membre/view/$1';
 $route['album_creation'] = 'membre/set_Album';
 
